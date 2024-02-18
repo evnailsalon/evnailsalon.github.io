@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>EV Nail Salon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+	<link href="https://www.w3schools.com/lib/w3-colors-2021.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com" rel="preconnect" />
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet" />
+	<style type="text/css">body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Source Sans Pro", Helvetica, sans-serif;
+        }
+
+@font-face {
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Source Sans 3 Light'), local('SourceSans3-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Sans 3", sans-serif; /* Apply the custom font family */
+}
+
+        body, html {
+            height: 100%;
+            color: #FFF;
+            line-height: 1.8;
+            background-image: url(../../images/overlay.png), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .w3-card-4 {
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 3px;
+            background-color: rgba(0, 0, 0, 0.45);
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+        }
+
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+.bgimg-1 {
+  background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+}
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+            background-image: url('https://sg-ocasa.com/evnailsalon/images/62.jpg');
+            min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+            background-image: url("https://sg-ocasa.com/evnailsalon/images/24.png");
+            min-height: 300px;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+            background-image: url("https://sg-ocasa.com/evnailsalon/images/25.png");
+            min-height: 300px;
+        }
+
+        .bgimg-4 {
+            background-image: url('https://sg-ocasa.com/evnailsalon/images/evillage.jpg');
+            min-height: 300px;
+        }
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+
+.container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .hello {
+      font-size: 6em;
+      font-weight: bold;
+      text-transform: lowercase;
+      letter-spacing: 0em;
+      text-align: left;
+      line-height: 1;
+      color: white;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    .welcome {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      text-align: left;
+letter-spacing: 0.6em;
+    
+    }
+      /* Custom styles */
+.w3-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.w3-top-bar-logo {
+    flex-grow: 1;
+}
+
+.w3-top-bar-menu {
+    display: none;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.w3-top-bar-menu a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 600px) {
+    /* Show top bar menu and hide individual links */
+    .w3-top-bar-menu {
+        display: flex;
+    }
+
+    .w3-top-bar-menu a {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .w3-top-bar {
+        padding: 8px 8px; /* Adjust padding */
+    }
+
+    .w3-top-bar-logo img {
+        width: 48px; /* Decrease logo size */
+        height: 48px;
+    }
+
+    .w3-top-bar-menu a {
+        padding: 8px 12px; /* Adjust padding */
+    }
+
+    /* Adjust styles for content sections */
+    .w3-content {
+        padding: 16px; /* Add padding to content */
+    }
+}
+	</style>
+</head>
+<body><!-- Top navigation bar -->
+<div class="w3-top-bar"><!-- Book Now button -->
+<div class="w3-book-now ">
+<div data-fillout-button-color="#9900EF" data-fillout-button-size="small" data-fillout-button-text="Book Now" data-fillout-embed-type="slider" data-fillout-id="cBobMvh8sgus" data-fillout-inherit-parameters="" data-fillout-slider-direction="right"></div>
+<script src="https://server.fillout.com/embed/v1/"></script></div>
+<!-- Logo -->
+
+<div class="w3-top-bar-logo "><a href="#home"><img src="/evnailsalon/images/logo1.png" style="width: 68px; height: 68px; float: left;" /></a></div>
+<!-- Menu (for mobile) -->
+
+<div class="w3-top-bar-menu"><a href="#about">ABOUT</a> <a href="#portfolio">PORTFOLIO</a> <a href="#contact">CONTACT</a> <a href="#" onclick="toggleFunction()">MENU</a></div>
+</div>
+<!-- Navbar (sit on top) --><!-- First Parallax Image with Logo Text -->
+
+<div class="bgimg-1 w3-display-container " id="home" style="opacity:0.9">
+<div class="w3-display-middle" style="white-space: nowrap; text-align: center;"><span class="w3-center w3-card-4 w3-padding-large  w3-xlarge w3-wide w3-animate-opacity">EV NAIL SALON </span>
+
+<p class="w3-text-black   "><span style="font-size:18px;"><span style="color:#222222;">Discover the Joy of Quality Manicures</span></span></p>
+</div>
+</div>
+
+<p style="text-align: center;"><!-- Container (About Section) --></p>
+
+<div class="container">
+<div class="hello">hello!</div>
+
+<div class="welcome"><span style="font-size:16px;">WELCOME TO EV NAIL SALON.</span></div>
+</div>
+
+<p style="text-align: center;"><span style="font-size:16px;">Located in the lush neighborhood of Simpang Bedok, East Village Nail Salon is both cozy and inviting. The salon offers various manicures, from gels to natural colors and everything in between.</span></p>
+
+<div class="w3-content w3-center  w3-container"><img class="w3-image w3-opacity  w3-hover-opacity-off" src="https://sg-ocasa.com/evnailsalon/images/188.jpg" /></div>
+
+<h2 style="text-align: center;">Real Joy of Quality Manicure</h2>
+
+<p style="text-align: center;">Founded by a professional multiple awards winner, Nail expert, and trainer Emma Le. She is highly adept at the latest nail artistry techniques and trends. You can trust that your treatments will be flawless every time.</p>
+
+<div class="w3-container w3-padding">
+<div class="w3-card-4 w3-round-large w3-margin-bottom">
+<div class="w3-container w3-2021-amethyst-orchid w3-center">
+<h3>Emma&#39;s Achievements</h3>
+</div>
+
+<div class="w3-container w3-white">
+<ul class="w3-ul w3-padding">
+	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Managed Top 3 Nail Salons by ThreeBestRated.</span></li>
+	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Managed Top 20 Nail Salons in Singapore by Sg.Finder.Life</span></li>
+	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Kelly Pang Nail Academy Top 3 Graduate.</span></li>
+	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">More than a decade of experience.</span></li>
+	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Top Nail Trainer Award.</span></li>
+	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Various Certificates in Nail Techniques.</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<p style="text-align: center;"><!-- Second Parallax Image with Portfolio Text --></p>
+
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="w3-display-middle" style="text-align: center;"><span class="w3-xxlarge w3-center w3-wide" style="text-shadow: 2px 2px 8px black;">MENU</span></div>
+</div>
+
+<p style="text-align: center;"><!-- Container (Portfolio Section) --></p>
+
+<div class="w3-content  w3-container w3-padding-32" id="menu">
+<p style="text-align: center;"><img alt="" src="/evnailsalon/images/logo1.png" style="width: 68px; height: 68px;" /></p>
+
+<div class="w3-responsive w3-card-4">
+<h3 class="w3-center w3-padding-16"><strong>MOST POPULAR SERVICES</strong></h3>
+
+<table class="w3-table w3-panel w3-align w3-bordered">
+	<tbody>
+		<tr>
+			<td>Express: Trim + Shape + Polish</td>
+			<td>Mani $15 | Pedi $15 | Both $28</td>
+		</tr>
+		<tr>
+			<td>Classic: Trim + Shape + Cuticle + Exfoliate</td>
+			<td>Mani $18 | Pedi $28 | Both $46</td>
+		</tr>
+		<tr>
+			<td>Gel Express: Express + Gel Polish</td>
+			<td>Mani $30 | Pedi $40 | Both $68</td>
+		</tr>
+		<tr>
+			<td>Gel Classic: Classic + Gel Polish</td>
+			<td>Mani $43 | Pedi $53 | Both $89</td>
+		</tr>
+		<tr>
+			<td><span style="color:#ffffff">Gentlemen Classic</span></td>
+			<td>$56</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="w3-center w3-padding-16"><strong>EXPERT SERVICES</strong></h3>
+
+<table class="w3-table w3-panel w3-bordered">
+	<tbody>
+		<tr>
+			<td>Expert Acrylic Extensions</td>
+			<td>$89</td>
+		</tr>
+		<tr>
+			<td>Masterful Hard Gel Extensions</td>
+			<td>$89</td>
+		</tr>
+		<tr>
+			<td>Elegant Nail Overlays</td>
+			<td>From $79</td>
+		</tr>
+		<tr>
+			<td>Express Dip Powder Manicure</td>
+			<td>$60</td>
+		</tr>
+		<tr>
+			<td>Classic Dip Powder Manicure</td>
+			<td>$70</td>
+		</tr>
+		<tr>
+			<td>Acrylic Removal</td>
+			<td>From $30</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="w3-center w3-padding-16"><strong>ADD ON</strong></h3>
+
+<table class="w3-table w3-panel w3-bordered">
+	<tbody>
+		<tr>
+			<td>Treatment</td>
+			<td>From $20</td>
+		</tr>
+		<tr>
+			<td>Waxing</td>
+			<td>From $25</td>
+		</tr>
+		<tr>
+			<td>Spa</td>
+			<td>From $20</td>
+		</tr>
+		<tr>
+			<td>Colour Change</td>
+			<td>From $8</td>
+		</tr>
+		<tr>
+			<td>Soak Offs</td>
+			<td>From $5 - 10</td>
+		</tr>
+		<tr>
+			<td>Nail Art/ Quick Dry/ Seasalt Soak</td>
+			<td>From $3</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="text-align: center;"><a href="https://1drv.ms/b/s!AhPDa3HyjBBSgqYLw8llDiihInjytQ?e=Laq0S1" target="_blank"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/download-pdf.png" style="height: 32px; width: 32px;" />Download Menu PDF</a></p>
+</div>
+
+<p style="text-align: center;"><!-- Second Parallax Image with Portfolio Text --></p>
+
+<div class="bgimg-2 w3-center w3-display-container w3-opacity-min">
+<div class="w3-display-middle"><span class="w3-xxlarge w3-center  w3-wide">REVIEWS</span></div>
+</div>
+
+<p style="text-align: center;"><!-- Container (Portfolio Section) --></p>
+
+<div class="w3-content  w3-container w3-padding-32" id="review">
+<div class="w3-responsive w3-center w3-card-4">
+<div class="w3-container">
+<p class="w3-center"><img class="w3-circle" src="https://sg-ocasa.com/evnailsalon/images/love_icon.png" /></p>
+
+<h3 class="w3-center">Megan Oliveiro</h3>
+
+<hr />
+<p>Emma was very friendly and polite. I had requested quite a difficult design for nail art, and she surpassed my expectations! she paid great attention to detail, ensured it looked the best she could do. 10/10 would go back</p>
+</div>
+</div>
+
+<p style="text-align: center;"></p>
+
+<div class="w3-responsive w3-center w3-card-4">
+<div class="w3-container">
+<p class="w3-center"><img class="w3-circle" src="https://sg-ocasa.com/evnailsalon/images/1icon.png" /></p>
+
+<h3 class="w3-center">Jln J</h3>
+
+<hr />
+<p><span style="font-size:16px;">Emma is very professional and efficient! Super friendly and down to earth. Her nail works are all superbly beautiful! Go to her if you want to get your nails fixed fast yet beautiful! Much love from me to you, Emma! ❤️</span></p>
+</div>
+</div>
+
+<p style="text-align: center;"></p>
+
+<div class="w3-responsive w3-center w3-card-4">
+<div class="w3-container">
+<p class="w3-center"><img class="w3-circle" src="https://sg-ocasa.com/evnailsalon/images/people.png" /></p>
+
+<h3 class="w3-center">Lulu Daryanani</h3>
+
+<hr />
+<p><span style="font-size:16px;">The nail salon provides top-notch services, and Emma is highly skilled and professional.&quot; The atmosphere in the salon is always relaxing and inviting, making it a great place to unwind and pamper yourself.&quot;</span></p>
+</div>
+</div>
+
+<p style="text-align: center;"></p>
+
+<div class="w3-responsive w3-center w3-card-4">
+<div class="w3-container">
+<p class="w3-center"><img class="w3-circle" src="https://sg-ocasa.com/evnailsalon/images/2icon.png" /></p>
+
+<h3 class="w3-center">Evan Boo</h3>
+
+<hr />
+<p><span style="font-size:16px;">Visited EV nails twice and both times exceeded my expectations :) The prices are really reasonable and the service is really great! love love the pedicure experience<br />
+<strong>Services:</strong> Pedicure, Manicure</span></p>
+</div>
+</div>
+
+<p style="text-align: center;"><a href="https://evnailsalon.business.site/" target="_blank"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/google.png" style="width: 32px; height: 32px;" />Read More On Google</a></p>
+</div>
+
+<p style="text-align: center;"><!-- Second Parallax Image with Portfolio Text --></p>
+
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="w3-display-middle" style="text-align: center;"><span class="w3-xxlarge w3-center  w3-wide">GALLERY</span></div>
+</div>
+
+<p style="text-align: center;"><!-- Container (Portfolio Section) --></p>
+
+<div class="w3-content w3-container w3-padding-32" id="gallery">
+<p style="text-align: center;"><!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) --></p>
+
+<div class="w3-row-padding w3-center">
+<div class="w3-col m3"><img alt="The mist over the mountains" class="w3-hover-opacity" onclick="onClick(this)" src="https://sg-ocasa.com/evnailsalon/images/41.png" style="width:100%" /></div>
+
+<div class="w3-col m3"><img alt="Coffee beans" class="w3-hover-opacity" onclick="onClick(this)" src="https://sg-ocasa.com/evnailsalon/images/23.png" style="width:100%" /></div>
+
+<div class="w3-col m3"><img alt="Bear closeup" class="w3-hover-opacity" onclick="onClick(this)" src="https://sg-ocasa.com/evnailsalon/images/15.png" style="width:100%" /></div>
+
+<div class="w3-col m3"><img alt="Quiet ocean" class="w3-hover-opacity" onclick="onClick(this)" src="https://sg-ocasa.com/evnailsalon/images/6.png" style="width:100%" /></div>
+</div>
+
+<div class="w3-row-padding w3-center w3-section">
+<div class="w3-col m3"><img alt="The mist" class="w3-hover-opacity" onclick="onClick(this)" src="https://sg-ocasa.com/evnailsalon/images/12.png" style="width:100%" /></div>
+
+<div class="w3-col m3"><img alt="My beloved typewriter" class="w3-hover-opacity" onclick="onClick(this)" src="https://sg-ocasa.com/evnailsalon/images/21.png" style="width:100%" /></div>
+
+<div class="w3-col m3"><img alt="Empty ghost train" class="w3-hover-opacity" onclick="onClick(this)" src="https://sg-ocasa.com/evnailsalon/images/25.png" style="width:100%" /></div>
+
+<div class="w3-col m3"><img alt="Sailing" class="w3-hover-opacity" onclick="onClick(this)" src="https://sg-ocasa.com/evnailsalon/images/29.png" style="width:100%" /></div>
+</div>
+
+<p style="text-align: center;"><a href="http://instagram.com/evnailsalonsg"><img alt="" src="/evnailsalon/images/insta.png" style="width: 32px; height: 32px;" /><span style="font-size:16px;">See More Magic at EV Insta</span></a></p>
+</div>
+
+<p style="text-align: center;"><!-- Modal for full size images on click--></p>
+
+<div class="w3-modal w3-black" id="modal01" onclick="this.style.display='none'">
+<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-32">
+<p><img class="w3-image" id="img01" /></p>
+
+<p class="w3-opacity w3-large" id="caption"></p>
+</div>
+</div>
+
+<p style="text-align: center;"><!-- Third Parallax Image with Portfolio Text --></p>
+
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+<div class="w3-display-middle" style="text-align: center;"><span class="w3-xxlarge  w3-center w3-wide">CONTACT</span></div>
+</div>
+
+<p style="text-align: center;"><!-- Container (Contact Section) --></p>
+
+<div class="w3-container w3-padding-32 w3-center" id="contact"><a href="https://maps.app.goo.gl/M9fHxybnA1fgv94W9"><img alt="" class="w3-image" src="https://ocasaforum.asia/evnailsalon/images/map.png" style=" width:90%; margin: 1px; border-width: 1px; border-style: solid;" /></a></div>
+
+<div class="w3-content w3-container " id="contact">
+<h3 style="text-align: center;"><img alt="" src="/evnailsalon/images/logo1.png" style="width: 98px; height: 98px;" /></h3>
+
+<p style="text-align: center;"><span style="font-size:16px;">Monday To Saturday, 11 am to 7 pm</span></p>
+
+<p class="w3-margin-top" style="text-align: center;">Upper Changi Road #01-101, East Village Mall, S487048</p>
+
+<p class="w3-margin-top=" style="text-align: center;">9793 9027 &amp; 9111 1526</p>
+
+<p style="font-size: 14px; text-align: center;"><a href="https://wa.me/6597939027"><img alt="" src="/evnailsalon/images/whatsapp.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a> <a href="https://www.facebook.com/evnailsalonsg"><img alt="" src="/evnailsalon/images/fb.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a> <a href="http://instagram.com/evnailsalonsg"><img alt="" src="/evnailsalon/images/insta.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a> <a href="https://g.co/kgs/F4JdQ5X"><img alt="" src="/evnailsalon/images/google.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a></p>
+
+<div data-fillout-button-color="#9900EF" data-fillout-button-size="small" data-fillout-button-text="Book Now" data-fillout-embed-type="slider" data-fillout-id="cBobMvh8sgus" data-fillout-inherit-parameters="" data-fillout-slider-direction="right" style="text-align: center;"></div>
+
+<p style="text-align: center;"><script src="https://server.fillout.com/embed/v1/"></script></p>
+</div>
+
+<p style="text-align: center;"><!-- Footer --></p>
+
+<footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off">
+<div class="w3-hide-large w3-hide-medium" id="navDemo"><a class="w3-bar-item w3-button" href="#about" onclick="toggleFunction()">ABOUT</a> <a class="w3-bar-item w3-button" href="#menu" onclick="toggleFunction()">MENU</a> <a class="w3-bar-item w3-button" href="#gallery" onclick="toggleFunction()">GALLERY</a> <a class="w3-bar-item w3-button" href="#contact" onclick="toggleFunction()">CONTACT</a></div>
+
+<p><img alt="" src="/evnailsalon/images/logo1.png" style="width: 24px; height: 24px;" /><span style="font-size:10px;">Nail Salon. Copyright 2024.</span></p>
+</footer>
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script></body>
+</html>
