@@ -69,10 +69,13 @@ body, h1, h2, h3, h4, h5, h6 {
         }
 
         .bgimg-4 {
-            background-image: url('https://sg-ocasa.com/evnailsalon/images/evillage.jpg');
-            min-height: 300px;
+            background-image: url('https://sg-ocasa.com/evnailsalon/images/Hello.png');
+           min-height: 400px;
         }
-
+.logobox {
+  background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+  opacity: 0.8;
+}
         .w3-wide {
             letter-spacing: 10px;
         }
@@ -83,8 +86,9 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .container {
       max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
+      margin: 0 auto;  
+padding-top: 32px;
+      
     }
 
     .hello {
@@ -95,14 +99,14 @@ body, h1, h2, h3, h4, h5, h6 {
       text-align: left;
       line-height: 1;
       color: white;
-      text-shadow: 2px 2px 8px black;
+      text-shadow: 2px 2px 8px white;
     }
 
     .welcome {
-      font-size: 1.2em;
+      font-size: 0.9em;
       text-transform: uppercase;
       text-align: left;
-letter-spacing: 0.6em;
+letter-spacing: 0.5em;
     
     }
       /* Custom styles */
@@ -111,7 +115,6 @@ letter-spacing: 0.6em;
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
-    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -169,41 +172,40 @@ letter-spacing: 0.6em;
 	</style>
 </head>
 <body><!-- Top navigation bar -->
-<div class="w3-top-bar"><!-- Book Now button -->
+<div class="w3-top-bar logobox"><!-- Book Now button -->
 <div class="w3-book-now ">
-<div data-fillout-button-color="#9900EF" data-fillout-button-size="small" data-fillout-button-text="Book Now" data-fillout-embed-type="slider" data-fillout-id="cBobMvh8sgus" data-fillout-inherit-parameters="" data-fillout-slider-direction="right"></div>
+<div data-fillout-button-color="#9900EF" data-fillout-button-size="small" data-fillout-button-text="Book Now" data-fillout-embed-type="slider" data-fillout-id="cBobMvh8sgus" data-fillout-inherit-parameters="" data-fillout-slider-direction="right" dir="rtl"></div>
 <script src="https://server.fillout.com/embed/v1/"></script></div>
 <!-- Logo -->
 
-<div class="w3-top-bar-logo "><a href="#home"><img src="/evnailsalon/images/logo1.png" style="width: 68px; height: 68px; float: left;" /></a></div>
+<div class="w3-top-bar-logo "><a href="#home"><img src="https://sg-ocasa.com/evnailsalon/images/logo1.png" style="width: 48px; height: 48px; " /></a></div>
 <!-- Menu (for mobile) -->
 
 <div class="w3-top-bar-menu"><a href="#about">ABOUT</a> <a href="#portfolio">PORTFOLIO</a> <a href="#contact">CONTACT</a> <a href="#" onclick="toggleFunction()">MENU</a></div>
 </div>
 <!-- Navbar (sit on top) --><!-- First Parallax Image with Logo Text -->
 
-<div class="bgimg-1 w3-display-container " id="home" style="opacity:0.9">
-<div class="w3-display-middle" style="white-space: nowrap; text-align: center;"><span class="w3-center w3-card-4 w3-padding-large  w3-xlarge w3-wide w3-animate-opacity">EV NAIL SALON </span>
+<div class="bgimg-1 w3-display-container " id="home" style="opacity:0.8">
+<div class="w3-display-middle" style="white-space: nowrap; text-align: center;"><span class="w3-center w3-card-4 w3-padding-large logobox  w3-xlarge w3-wide w3-animate-opacity">EV NAIL SALON </span>
 
 <p class="w3-text-black   "><span style="font-size:18px;"><span style="color:#222222;">Discover the Joy of Quality Manicures</span></span></p>
 </div>
 </div>
 
-<p style="text-align: center;"><!-- Container (About Section) --></p>
-
+<div class="w3-content w3-container w3-padding-32" id="about">
 <div class="container">
 <div class="hello">hello!</div>
 
-<div class="welcome"><span style="font-size:16px;">WELCOME TO EV NAIL SALON.</span></div>
+<div class="welcome">WELCOME TO EV NAIL SALON.</div>
 </div>
 
-<p style="text-align: center;"><span style="font-size:16px;">Located in the lush neighborhood of Simpang Bedok, East Village Nail Salon is both cozy and inviting. The salon offers various manicures, from gels to natural colors and everything in between.</span></p>
+<p class="w3-padding-16" style="text-align: center;"><span style="font-size:16px;">Located in the lush neighborhood of Simpang Bedok, East Village Nail Salon is both cozy and inviting. The salon offers various manicures, from gels to natural colors and everything in between.</span></p>
 
 <div class="w3-content w3-center  w3-container"><img class="w3-image w3-opacity  w3-hover-opacity-off" src="https://sg-ocasa.com/evnailsalon/images/188.jpg" /></div>
 
-<h2 style="text-align: center;">Real Joy of Quality Manicure</h2>
+<h3 style="text-align: center;"><em>&quot;Real Joy of Quality Manicures&quot;</em></h3>
 
-<p style="text-align: center;">Founded by a professional multiple awards winner, Nail expert, and trainer Emma Le. She is highly adept at the latest nail artistry techniques and trends. You can trust that your treatments will be flawless every time.</p>
+<p style="text-align: center;">Founded by a professional multiple awards winner, Nail expert, and trainer Emma Le. She is highly adept at the latest nail artistry techniques and trends. You can trust that your treatments to be flawless every time.</p>
 
 <div class="w3-container w3-padding">
 <div class="w3-card-4 w3-round-large w3-margin-bottom">
@@ -216,10 +218,11 @@ letter-spacing: 0.6em;
 	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Managed Top 3 Nail Salons by ThreeBestRated.</span></li>
 	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Managed Top 20 Nail Salons in Singapore by Sg.Finder.Life</span></li>
 	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Kelly Pang Nail Academy Top 3 Graduate.</span></li>
-	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">More than a decade of experience.</span></li>
-	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Top Nail Trainer Award.</span></li>
+	<li class="w3-bar"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">More than a decade of experience.</span></li>
+	<li class="w3-bar"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Top Nail Trainer Award.</span></li>
 	<li class="w3-bar" style="text-align: center;"><span class="w3-bar-item w3-large w3-text-2021-amethyst-orchid">Various Certificates in Nail Techniques.</span></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -227,16 +230,16 @@ letter-spacing: 0.6em;
 <p style="text-align: center;"><!-- Second Parallax Image with Portfolio Text --></p>
 
 <div class="bgimg-2 w3-display-container w3-opacity-min">
-<div class="w3-display-middle" style="text-align: center;"><span class="w3-xxlarge w3-center w3-wide" style="text-shadow: 2px 2px 8px black;">MENU</span></div>
+<div class="w3-display-middle" style="text-align: center;"><span class="w3-xxlarge w3-center w3-wide" style="text-shadow: 2px 2px 8px white;">MENU</span></div>
 </div>
 
 <p style="text-align: center;"><!-- Container (Portfolio Section) --></p>
 
 <div class="w3-content  w3-container w3-padding-32" id="menu">
-<p style="text-align: center;"><img alt="" src="/evnailsalon/images/logo1.png" style="width: 68px; height: 68px;" /></p>
+<p style="text-align: center;"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/logo1.png" style="width: 68px; height: 68px;" /></p>
 
 <div class="w3-responsive w3-card-4">
-<h3 class="w3-center w3-padding-16"><strong>MOST POPULAR SERVICES</strong></h3>
+<h3 class="w3-center w3-padding-16">MOST POPULAR SERVICES</h3>
 
 <table class="w3-table w3-panel w3-align w3-bordered">
 	<tbody>
@@ -263,7 +266,7 @@ letter-spacing: 0.6em;
 	</tbody>
 </table>
 
-<h3 class="w3-center w3-padding-16"><strong>EXPERT SERVICES</strong></h3>
+<h3 class="w3-center w3-padding-16">EXPERT SERVICES</h3>
 
 <table class="w3-table w3-panel w3-bordered">
 	<tbody>
@@ -294,7 +297,7 @@ letter-spacing: 0.6em;
 	</tbody>
 </table>
 
-<h3 class="w3-center w3-padding-16"><strong>ADD ON</strong></h3>
+<h3 class="w3-center w3-padding-16">ADD-ONS</h3>
 
 <table class="w3-table w3-panel w3-bordered">
 	<tbody>
@@ -326,13 +329,13 @@ letter-spacing: 0.6em;
 </table>
 </div>
 
-<p style="text-align: center;"><a href="https://1drv.ms/b/s!AhPDa3HyjBBSgqYLw8llDiihInjytQ?e=Laq0S1" target="_blank"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/download-pdf.png" style="height: 32px; width: 32px;" />Download Menu PDF</a></p>
+<p class="w3-padding-16" style="text-align: center;"><a href="https://1drv.ms/b/s!AhPDa3HyjBBSgqYLw8llDiihInjytQ?e=Laq0S1" target="_blank"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/download-pdf.png" style="height: 32px; width: 32px;" />Download Menu PDF</a></p>
 </div>
 
 <p style="text-align: center;"><!-- Second Parallax Image with Portfolio Text --></p>
 
 <div class="bgimg-2 w3-center w3-display-container w3-opacity-min">
-<div class="w3-display-middle"><span class="w3-xxlarge w3-center  w3-wide">REVIEWS</span></div>
+<div class="w3-display-middle"><span class="w3-xxlarge w3-center  w3-wide" style="text-shadow: 2px 2px 8px white;">REVIEWS</span></div>
 </div>
 
 <p style="text-align: center;"><!-- Container (Portfolio Section) --></p>
@@ -389,13 +392,13 @@ letter-spacing: 0.6em;
 </div>
 </div>
 
-<p style="text-align: center;"><a href="https://evnailsalon.business.site/" target="_blank"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/google.png" style="width: 32px; height: 32px;" />Read More On Google</a></p>
+<p class="w3-padding-16" style="text-align: center;"><a href="https://evnailsalon.business.site/" target="_blank"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/google.png" style="width: 32px; height: 32px;" />Read More On Google</a></p>
 </div>
 
 <p style="text-align: center;"><!-- Second Parallax Image with Portfolio Text --></p>
 
 <div class="bgimg-2 w3-display-container w3-opacity-min">
-<div class="w3-display-middle" style="text-align: center;"><span class="w3-xxlarge w3-center  w3-wide">GALLERY</span></div>
+<div class="w3-display-middle" style="text-align: center;"><span style="color:#000000;"><span class="w3-xxlarge w3-center  w3-wide" style="text-shadow: 2px 2px 8px white;">GALLERY</span></span></div>
 </div>
 
 <p style="text-align: center;"><!-- Container (Portfolio Section) --></p>
@@ -423,7 +426,7 @@ letter-spacing: 0.6em;
 <div class="w3-col m3"><img alt="Sailing" class="w3-hover-opacity" onclick="onClick(this)" src="https://sg-ocasa.com/evnailsalon/images/29.png" style="width:100%" /></div>
 </div>
 
-<p style="text-align: center;"><a href="http://instagram.com/evnailsalonsg"><img alt="" src="/evnailsalon/images/insta.png" style="width: 32px; height: 32px;" /><span style="font-size:16px;">See More Magic at EV Insta</span></a></p>
+<p class="w3-padding-16" style="text-align: center;"><a href="http://instagram.com/evnailsalonsg"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/insta.png" style="width: 32px; height: 32px;" /><span style="font-size:16px;">See More Magic at EV Insta</span></a></p>
 </div>
 
 <p style="text-align: center;"><!-- Modal for full size images on click--></p>
@@ -439,7 +442,7 @@ letter-spacing: 0.6em;
 <p style="text-align: center;"><!-- Third Parallax Image with Portfolio Text --></p>
 
 <div class="bgimg-4 w3-display-container w3-opacity-min">
-<div class="w3-display-middle" style="text-align: center;"><span class="w3-xxlarge  w3-center w3-wide">CONTACT</span></div>
+<div class="w3-display-middle" style="text-align: center;"><span style="color:#000000;"><span class="w3-xxlarge  w3-center w3-wide" style="text-shadow: 2px 2px 8px white;">CONTACT</span></span></div>
 </div>
 
 <p style="text-align: center;"><!-- Container (Contact Section) --></p>
@@ -447,7 +450,7 @@ letter-spacing: 0.6em;
 <div class="w3-container w3-padding-32 w3-center" id="contact"><a href="https://maps.app.goo.gl/M9fHxybnA1fgv94W9"><img alt="" class="w3-image" src="https://ocasaforum.asia/evnailsalon/images/map.png" style=" width:90%; margin: 1px; border-width: 1px; border-style: solid;" /></a></div>
 
 <div class="w3-content w3-container " id="contact">
-<h3 style="text-align: center;"><img alt="" src="/evnailsalon/images/logo1.png" style="width: 98px; height: 98px;" /></h3>
+<h3 style="text-align: center;"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/logo1.png" style="width: 98px; height: 98px;" /></h3>
 
 <p style="text-align: center;"><span style="font-size:16px;">Monday To Saturday, 11 am to 7 pm</span></p>
 
@@ -455,19 +458,17 @@ letter-spacing: 0.6em;
 
 <p class="w3-margin-top=" style="text-align: center;">9793 9027 &amp; 9111 1526</p>
 
-<p style="font-size: 14px; text-align: center;"><a href="https://wa.me/6597939027"><img alt="" src="/evnailsalon/images/whatsapp.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a> <a href="https://www.facebook.com/evnailsalonsg"><img alt="" src="/evnailsalon/images/fb.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a> <a href="http://instagram.com/evnailsalonsg"><img alt="" src="/evnailsalon/images/insta.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a> <a href="https://g.co/kgs/F4JdQ5X"><img alt="" src="/evnailsalon/images/google.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a></p>
+<p style="font-size: 14px; text-align: center;"><a href="https://wa.me/6597939027"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/whatsapp.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a> <a href="https://www.facebook.com/evnailsalonsg"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/fb.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a> <a href="http://instagram.com/evnailsalonsg"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/insta.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a> <a href="https://g.co/kgs/F4JdQ5X"><img alt="" src="https://sg-ocasa.com/evnailsalon/images/google.png" style="width: 32px; height: 32px; margin-right: 10px;" /></a></p>
 
-<div data-fillout-button-color="#9900EF" data-fillout-button-size="small" data-fillout-button-text="Book Now" data-fillout-embed-type="slider" data-fillout-id="cBobMvh8sgus" data-fillout-inherit-parameters="" data-fillout-slider-direction="right" style="text-align: center;"></div>
+<div data-fillout-button-color="#9900EF" data-fillout-button-size="small" data-fillout-button-text="Book Now" data-fillout-embed-type="slider" data-fillout-id="cBobMvh8sgus" data-fillout-inherit-parameters="" data-fillout-slider-direction="right" style="text-align: center; padding-top:16px; padding-bottom:16px"></div>
 
 <p style="text-align: center;"><script src="https://server.fillout.com/embed/v1/"></script></p>
 </div>
 
-<p style="text-align: center;"><!-- Footer --></p>
-
 <footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off">
 <div class="w3-hide-large w3-hide-medium" id="navDemo"><a class="w3-bar-item w3-button" href="#about" onclick="toggleFunction()">ABOUT</a> <a class="w3-bar-item w3-button" href="#menu" onclick="toggleFunction()">MENU</a> <a class="w3-bar-item w3-button" href="#gallery" onclick="toggleFunction()">GALLERY</a> <a class="w3-bar-item w3-button" href="#contact" onclick="toggleFunction()">CONTACT</a></div>
 
-<p><img alt="" src="/evnailsalon/images/logo1.png" style="width: 24px; height: 24px;" /><span style="font-size:10px;">Nail Salon. Copyright 2024.</span></p>
+<p><img alt="" src="https://sg-ocasa.com/evnailsalon/images/logo1.png" style="width: 24px; height: 24px;" /><span style="font-size:10px;">Nail Salon. Copyright 2024.</span></p>
 </footer>
 <script>
     // Modal Image Gallery
