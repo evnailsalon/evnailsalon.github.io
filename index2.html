@@ -78,6 +78,32 @@ body, h1, h2, h3, h4, h5, h6 {
             background-image: url('https://sg-ocasa.com/evnailsalon/images/Hello.png');
            min-height: 400px;
         }
+
+/* Floating WhatsApp Button Style */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 40px; /* Adjusted to top */
+    right: 40px; /* Adjusted to right */
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+}
+
+		
 .logobox {
   background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
   opacity: 0.8;
@@ -178,6 +204,12 @@ letter-spacing: 0.5em;
 	</style>
 </head>
 <body><!-- Top navigation bar -->
+
+	<div class="whatsapp-float">
+    <a href="https://wa.me/6597939027" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp Icon" />
+    </a>
+</div>
 <div class="w3-top-bar logobox"><!-- Book Now button -->
 <div class="w3-book-now ">
 <div data-fillout-button-color="#9900EF" data-fillout-button-size="small" data-fillout-button-text="Book Now" data-fillout-embed-type="slider" data-fillout-id="cBobMvh8sgus" data-fillout-inherit-parameters="" data-fillout-slider-direction="right" dir="rtl"></div>
