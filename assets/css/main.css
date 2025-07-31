@@ -216,7 +216,7 @@ input, select, textarea {
 			z-index: -1;
 			background-attachment: fixed;
 			background-color: #e1e6e1;
-			background-image: url("https://ogsalliance.com/images/overlay.png"), url("https://ogsalliance.com/images/bg.jpg");
+			background-image: url("https://ogsalliance.com/images/evimages/overlay.png"), url("https://ogsalliance.com/images/evimages/bg.jpg");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
 		}
